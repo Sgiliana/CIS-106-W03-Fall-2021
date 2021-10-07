@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-07 04:19:27 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxHME5UMjg7MjAyMS0xMC0wNzswNDoxNTo0MSBBTTszMjk1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxHME5UMjg7MjAyMS0xMC0wNzswNDoxOToyNyBBTTsxOzM0MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l" type="Real" array="False" size=""/>
+            <declare name="w" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter length &quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;Enter width &quot;" newline="True"/>
+            <input variable="w"/>
+            <assign variable="a" expression="l * w"/>
+            <assign variable="c" expression="2 * l + 2 * w"/>
+            <output expression="&quot;The area is &quot; &amp; a &amp; &quot; and the circumference is &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

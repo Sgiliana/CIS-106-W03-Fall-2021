@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-04 12:59:37 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNNQU1OODk7MjAyMS0xMC0wNDsxMjo1Mzo1OCBBTTszMjk5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNNQU1OODk7MjAyMS0xMC0wNDsxMjo1OTozNyBBTTsxOzM0MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l" type="String" array="False" size=""/>
+            <declare name="h" type="Real" array="False" size=""/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name &quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;Enter number of hours worked &quot;" newline="True"/>
+            <input variable="h"/>
+            <output expression="&quot;Enter pay rate &quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="p" expression="h * r"/>
+            <output expression="&quot;For last name &quot; &amp; l" newline="True"/>
+            <output expression="&quot;The gross pay is $&quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

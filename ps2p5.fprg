@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-07 04:42:09 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxHME5UMjg7MjAyMS0xMC0wNzswNDozNDozMCBBTTszMjk0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxHME5UMjg7MjAyMS0xMC0wNzswNDo0MjowOSBBTTsxOzM0MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p1" type="Real" array="False" size=""/>
+            <declare name="d1" type="Real" array="False" size=""/>
+            <declare name="p2" type="Real" array="False" size=""/>
+            <declare name="d2" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter price of item &quot;" newline="True"/>
+            <input variable="p1"/>
+            <output expression="&quot;Enter discount in decimal form &quot;" newline="True"/>
+            <input variable="d1"/>
+            <assign variable="p2" expression="p1 - p1 * d1"/>
+            <assign variable="d2" expression="p1 * d1"/>
+            <output expression="&quot;The discounted amount was $&quot; &amp; d2 &amp; &quot; and the discounted price of the item is $&quot; &amp; p2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
