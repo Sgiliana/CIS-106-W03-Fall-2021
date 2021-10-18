@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-17 08:11:16 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUk1Rkc5TEw7MjAyMS0xMC0xNzswNzo1ODo1NyBQTTszMzQx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUk1Rkc5TEw7MjAyMS0xMC0xNzswODoxMToxNiBQTTsxOzM0MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="warrantee" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter name of item&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter cost of item&quot;" newline="True"/>
+            <input variable="cost"/>
+            <if expression="cost &gt; 1000">
+                <then>
+                    <assign variable="warrantee" expression="cost * 0.10"/>
+                </then>
+                <else>
+                    <assign variable="warrantee" expression="cost * 0.05"/>
+                </else>
+            </if>
+            <assign variable="total" expression="cost + warrantee"/>
+            <output expression="&quot;The item being purchased is &quot; &amp; name" newline="True"/>
+            <output expression="&quot;The cost of the item is &quot; &amp; cost" newline="True"/>
+            <output expression="&quot;The cost of the warrantee is &quot; &amp; warrantee" newline="True"/>
+            <output expression="&quot;The total cost of the item and its warranty is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
