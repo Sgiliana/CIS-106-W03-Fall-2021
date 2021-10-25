@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-24 11:42:36 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTUzTTRJSjc7MjAyMS0xMC0yNDsxMToxNTozMyBQTTszMjgw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTUzTTRJSjc7MjAyMS0xMC0yNDsxMTo0MjozNiBQTTsxOzMzOTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="score1" type="Real" array="False" size=""/>
+            <declare name="score2" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;Do you want to run this program (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Please enter last name and two exam scores&quot;" newline="True"/>
+                <input variable="name"/>
+                <input variable="score1"/>
+                <input variable="score2"/>
+                <assign variable="avg" expression="(score1 + score2) / 2"/>
+                <output expression="&quot;The average for &quot; &amp; name &amp; &quot; is &quot; &amp; avg" newline="True"/>
+                <assign variable="c" expression="c + 1"/>
+                <output expression="&quot;Do you want to continue (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <output expression="&quot;The number of students who have entered data is &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

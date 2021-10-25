@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-25 12:10:07 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTUzTTRJSjc7MjAyMS0xMC0yNDsxMTo1Mjo0MCBQTTszMjc5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTUzTTRJSjc7MjAyMS0xMC0yNTsxMjoxMDowNyBBTTsxOzMzNzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="tgross" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="tgross" expression="0"/>
+            <output expression="&quot;Do you want to start the program (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Enter employee last name, hours worked, and rate of pay&quot;" newline="True"/>
+                <input variable="name"/>
+                <input variable="hours"/>
+                <input variable="rate"/>
+                <if expression="hours &gt; 40">
+                    <then>
+                        <assign variable="gross" expression="(hours - 40) * (rate * 1.5) + (40 * rate)"/>
+                    </then>
+                    <else>
+                        <assign variable="gross" expression="hours * rate"/>
+                    </else>
+                </if>
+                <assign variable="c" expression="c + 1"/>
+                <assign variable="tgross" expression="tgross + gross"/>
+                <output expression="&quot;The gross pay for &quot; &amp; name &amp; &quot;is &quot; &amp; gross" newline="True"/>
+                <output expression="&quot;Do you want to run this program again (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <assign variable="avg" expression="tgross / c"/>
+            <output expression="&quot;The number of employees who entered data is &quot; &amp; c" newline="True"/>
+            <output expression="&quot;The sum of all gross pays is &quot; &amp; tgross" newline="True"/>
+            <output expression="&quot;The average pay is &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
