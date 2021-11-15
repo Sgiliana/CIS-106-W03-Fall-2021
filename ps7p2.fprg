@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-14 10:07:05 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTAyUjFBNUE7MjAyMS0xMS0xNDswOTo0Mjo0NSBQTTszMjY3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTAyUjFBNUE7MjAyMS0xMS0xNDsxMDowNzowNSBQTTsxOzMzNjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hits" type="Real" array="False" size=""/>
+            <declare name="bats" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter player's last name &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter number of hits&quot;" newline="True"/>
+            <input variable="hits"/>
+            <output expression="&quot;Enter number of at bats&quot;" newline="True"/>
+            <input variable="bats"/>
+            <call expression="batavg(hits, bats)"/>
+            <assign variable="avg" expression="batavg(hits, bats)"/>
+            <output expression="&quot;The batting average for player &quot; &amp; name &amp; &quot; is &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+    <function name="batavg" type="Real" variable="avg">
+        <parameters>
+            <parameter name="hits" type="Real" array="False"/>
+            <parameter name="bats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="hits / bats"/>
+        </body>
+    </function>
+</flowgorithm>
